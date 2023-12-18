@@ -1,0 +1,121 @@
+/* Reset some default Bootstrap styles */
+body {
+    font-family: Raleway;
+    background-color: #ddd;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+/* Set max-height for carousel images */
+.carousel-inner img {
+    width: 100%;
+    margin: auto;
+    max-height: 400px; /* Adjust the value as needed */
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/* Style for the "What We Do" section */
+.container.text-center h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+.body {
+    font-family: Raleway;
+    background-color: #333;
+}
+
+/* Style for the images in the "What We Do" section */
+.container.text-center .row .col-sm-4 img {
+    border: 1px solid #373684;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Style for the "Current Project" and "Project 2" paragraphs */
+.container.text-center .row .col-sm-4 p {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for the "Some text.." well sections */
+.container.text-center .row .col-sm-4 .well {
+    background-color: #f8f8f8;
+}
+
+/* Style for the footer text */
+footer.container-fluid.text-center p {
+    margin: 0;
+    color: #777;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+    /* Add your desktop-specific styles here */
+  
+    /* Increase font size for navbar items on desktop */
+    .navbar-nav > li > a {
+      font-size: 16px;
+      font-family: Raleway;
+    }
+    
+    .nav li:hover{
+        color: #373684;
+        background-color: #b87333;
+        transform: scale(1.2);
+    }
+  
+    /* Adjust the height of the carousel */
+    .carousel-inner img {
+      min-height: 300px;
+    }
+  
+    /* Adjust the size of the images in the "What We Do" section */
+    .container.text-center .row .col-sm-4 img {
+      width: 80px; /* Adjust the value as needed */
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 767px) {
+    /* Add your mobile-specific styles here */
+  
+    /* Decrease font size for navbar items on mobile */
+    .navbar-nav > li > a {
+      font-size: 14px;
+      font-family: Raleway;
+    }
+
+    .nav li:hover{
+        color: #373684;
+        background-color: #b87333;
+        transform: scale(1.2);
+    }
+  
+    /* Adjust the height of the carousel for mobile */
+    .carousel-inner img {
+      min-height: 150px;
+    }
+  
+    /* Adjust the size of the images in the "What We Do" section for mobile */
+    .container.text-center .row .col-sm-4 img {
+      width: 100%; /* Adjust the value as needed */
+    }
+  }
+  
